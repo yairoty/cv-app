@@ -11,7 +11,6 @@ function App() {
   }, []);
 
   return (
-    // <div className="flex h-screen">  // use for non-head hunters only
     <div className="flex">
       <div className="flex basis-2/12 bg-gray-100 justify-center p-6">
         <Bio bio={bioData} />
