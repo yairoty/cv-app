@@ -11,17 +11,17 @@ export class ViewModel {
       email: email,
       github: 'https://github.com/yairoty',
       linkedin: linkedin,
-      whatsapp: '+972 546543201',
-      phone: '+351 918882646',
+      whatsapp: phone,
+      phone: whatsapp,
       education: [
         'B.S psychology, BGU. 2011',
         'MCPD C# .NET 3.0, High-Tech Collage. 2012',
         'JAVA Developer SAPIENS internal course. 2013',
       ],
-      description: `I am an experienced Full Stack Web Developer with over 12 years of experience.<br/>
-        As a freelance working in long term contracts, I help startups grow and achieve their goals.<br/>
-        My background consists of various domains such as cyber security solutions, blockchain solution, leading and training teams aimed to bring the companies dreams and ideas into reality.<br/>
-        I consider myself an autodidact as well as a true team player, fast learner with curiosity and passion to develop and learn new things.`,
+      description: `I am an experienced Full Stack Developer with over 12 years of experience.<br/> 
+        I am a proven team player, driven by curiosity and a passion to create.<br/>
+        As a freelance with a focus on long term contracts, I help startups grow and achieve their goals.<br/>
+        My areas of expertise are cyber security solutions, blockchain and in developing performant, enterprise-level software products.`,
     };
   }
 
