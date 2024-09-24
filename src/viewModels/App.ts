@@ -11,8 +11,8 @@ export class ViewModel {
       email: email,
       github: 'https://github.com/yairoty',
       linkedin: linkedin,
-      whatsapp: phone,
-      phone: whatsapp,
+      whatsapp: whatsapp,
+      phone: phone,
       education: [
         'B.S psychology, BGU. 2011',
         'MCPD C# .NET 3.0, High-Tech Collage. 2012',
@@ -53,10 +53,10 @@ export class ViewModel {
           'Working closely with the product team to define features based on customer requests',
           'Conducting interviews and technical assessments for candidates',
           'Implemented web-socket infrastructure',
-          'Implemented integration with SSO solutions',
+          'Implemented integration with SSO web-hook solutions',
           'Implemented an email alert solution for system events for customers, with the ability to configure the content and template',
           'Developed main table view with query builder E2E solution',
-          'Migrated the Monorepo projects to React 18V while supporting legacy customers',
+          'Migrated the Monorepo projects to React18 while supporting legacy customers',
           'Migrated the Monorepo projects styling to css-in-js solution (JSS)',
         ],
       },
@@ -113,7 +113,7 @@ export class ViewModel {
           'Implemented feature-flag support with whitelist abilities',
           'Implemented non-url react wizard, Feature flag',
           'Implemented event based scheduler engine',
-          'Moved the server team to Typescript. This includes conducting proof of concept, training and guiding the team through',
+          'Moved the server team to Typescript',
         ],
       },
       {
@@ -148,8 +148,7 @@ export class ViewModel {
         title: 'Fullstack developer at Sapiens, Hulon',
         startDate: new Date(2012, 1).getTime(),
         endDate: new Date(2015, 1).getTime(),
-        description:
-          'Sapiens developing software solutions for the insurance industry. (http://www.sapiens.com)',
+        description: '',
         tech: [
           'Java',
           'Java Spring',

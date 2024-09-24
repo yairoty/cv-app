@@ -8,13 +8,13 @@ interface Props {
 }
 
 const Timeline: React.FC<Props> = ({ timelineData }) => {
-  const vm = new ViewModel();
+  const vm = new ViewModel(); // TODO move to react.context
   return (
     <>
       {timelineData.map((card, index) => (
-        <div className="mb-10 pl-10 pt-4 relative" key={index}>
-          <div className="absolute -top-4 -left-8 flex gap-2">
-            <div className="w-3 h-1 bg-gray-500 rounded-e-full mt-2" />
+        <div className="mb-10 pt-4 relative" key={index}>
+          <div className="absolute -top-3 left-2 flex">
+            {/* <div className="w-3 h-1 bg-gray-500 rounded-e-full mt-2" /> */}
             <div className="text-sm font-semibold text-gray-500 ">
               {vm.getDisplayDateRange(card.startDate, card.endDate)}
             </div>

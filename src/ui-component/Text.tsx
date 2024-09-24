@@ -14,10 +14,7 @@ const Text: React.FC<Props> = ({ text, className }) => {
   return (
     <div className={clsx(className)}>
       {textLines.map((line, idx) => (
-        <div key={idx}>
-          <p>{line}</p>
-          <br />
-        </div>
+        <div key={idx}>{line}</div>
       ))}
     </div>
   );

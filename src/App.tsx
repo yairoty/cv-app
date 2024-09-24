@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react';
 import { ViewModel } from './viewModels/App'; // TODO move to context-API and provide from root
 import { Bio, Timeline } from './views';
-import { Seperator } from './ui-component';
 
 function App() {
   const viewModel = new ViewModel();
@@ -11,15 +10,17 @@ function App() {
   }, []);
 
   return (
-    <div className="flex">
-      <div className="flex basis-2/12 bg-gray-100 justify-center p-6">
-        <Bio bio={bioData} />
-      </div>
+    <div className="bg-gray-100 px-4 py-2 flex justify-center content-center">
+      <div className="flex flex-col justify-center content-center">
+        <div className="flex ">
+          <Bio bio={bioData} />
+        </div>
 
-      <Seperator />
+        {/* <Seperator /> */}
 
-      <div className="flex basis-10/12 bg-gray-100 flex-col p-6 overflow-y-auto pt-8">
-        <Timeline timelineData={timelineData} />
+        <div className="flex flex-col overflow-y-auto pt-4">
+          <Timeline timelineData={timelineData} />
+        </div>
       </div>
     </div>
   );
