@@ -12,17 +12,22 @@ const Timeline: React.FC<Props> = ({ timelineData }) => {
   return (
     <>
       {timelineData.map((card, index) => (
-        <div className="mb-10 pt-4 relative" key={index}>
-          <div className="absolute -top-3 left-2 flex">
-            {/* <div className="w-3 h-1 bg-gray-500 rounded-e-full mt-2" /> */}
+        <div className="mb-2 pt-4 relative" key={index}>
+          {/* <div className="absolute -top-3 left-2 flex">
             <div className="text-sm font-semibold text-gray-500 ">
               {vm.getDisplayDateRange(card.startDate, card.endDate)}
             </div>
-          </div>
+          </div> */}
 
           {/* Card Content */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold mb-2">{card.title}</h3>
+            <div className="flex gap-4 justify-between">
+              <h3 className="text-xl font-bold mb-2">{card.title}</h3>
+              <h3 className="text-sm font-semibold text-gray-500 text-center">
+                {vm.getDisplayDateRange(card.startDate, card.endDate)}
+              </h3>
+            </div>
+
             <p className="mb-4">{card.description}</p>
 
             <div className="mb-4">
