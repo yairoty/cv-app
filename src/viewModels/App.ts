@@ -20,7 +20,7 @@ export class ViewModel {
       ],
       description: `I am an experienced Full Stack Developer with over 12 years of experience.<br/> 
         I am a proven team player, driven by curiosity and a passion to create.<br/>
-        As a freelance with a focus on long term contracts, I help startups grow and achieve their goals.<br/>
+        As a freelancer with a focus on long term contracts, I help startups grow and achieve their goals.<br/>
         My areas of expertise are cyber security solutions, blockchain and in developing performant, enterprise-level software products.`,
     };
   }
@@ -137,11 +137,13 @@ export class ViewModel {
           'Inline product',
         ],
         accomplishments: [],
+        // marked out due to size constraints
+
         // accomplishments: [
-        //   'Enhanced CI-CD pipeline using grunt build scripts',
-        //   'Developed innovating UI component including slide-in response feedback (asynchronous based). slide-in wizards.',
-        //   'Developed Main App worker service',
-        //   'Adding fully automation environment initializer to automation API tests. This includes creation of AWS environment using SDK with NodeJS project.',
+        // 'Enhanced CI-CD pipeline using grunt build scripts',
+        // 'Developed innovating UI component including slide-in response feedback (asynchronous based). slide-in wizards.',
+        // 'Developed Main App worker service',
+        // 'Adding fully automation environment initializer to automation API tests. This includes creation of AWS environment using SDK with NodeJS project.',
         // ],
       },
       {
